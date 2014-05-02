@@ -7,6 +7,12 @@ As you probably know, Sketch will switch its scripting backend from JSTalk to Co
 
 As a result of this change, **some plugins will stop working unless you fix them**.
 
+If you want to know wether your plugins are affected or not, run this on your plugins' root folder:
+
+    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' --include=*.{js,jstalk,sketchplugin} .
+
+If you don't get any output, you're probably good to go (but then again, you should test your plugins just to make sure they work).
+
 If you haven't done it already, [download the latest Sketch beta](http://bohemiancoding.com/sketch/beta/) and make sure your plugin(s) are working as expected.
 
 We've created this repository to help you with this task. Here's a list of the issues we've identified, and how to solve them. We've tested 3.0.2 with some of the most popular plugins out there to find these, but we really need you to play with the beta and let us know if something is broken and is not on the list.
@@ -16,7 +22,7 @@ Feel free to file issues in this repo, and we'll either fix the bugs, or provide
 Thanks to all for your understanding, and for making Sketch awesome.
 
 
-## Known Issues in Sketch 3.0.2 (7775)
+## Known Issues in Sketch 3.0.2 (7775)
 
 ### `copy` is now a reserved word
 
@@ -56,3 +62,5 @@ or:
 This issue has been found in:
 
 - <https://github.com/timuric/Content-generator-for-sketch-app>
+
+
