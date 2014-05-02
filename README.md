@@ -7,6 +7,8 @@ As you probably know, Sketch will switch its scripting backend from JSTalk to Co
 
 As a result of this change, **some plugins will stop working unless you fix them**.
 
+If you haven't done it already, [download the latest Sketch beta](http://bohemiancoding.com/sketch/beta/) and make sure your plugin(s) are working as expected.
+
 We've created this repository to help you with this task. Here's a list of the issues we've identified, and how to solve them. We've tested 3.0.2 with some of the most popular plugins out there to find these, but we really need you to play with the beta and let us know if something is broken and is not on the list.
 
 Feel free to file issues in this repo, and we'll either fix the bugs, or provide you with a workaround.
