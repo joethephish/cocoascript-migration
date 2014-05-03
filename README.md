@@ -22,7 +22,7 @@ Feel free to file issues in this repo, and we'll either fix the bugs, or provide
 Thanks to all for your understanding, and for making Sketch awesome.
 
 
-## Known Issues in Sketch 3.0.2 (7775)
+## Known Issues in Sketch 3.0.2 (7777)
 
 ### `copy` is now a reserved word
 
