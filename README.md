@@ -9,7 +9,7 @@ As a result of this change, **some plugins will stop working unless you fix them
 
 If you want to know wether your plugins are affected or not, run this on your plugins' root folder:
 
-    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' --include=*.{js,jstalk,sketchplugin} .
+    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e intergerValue --include=*.{js,jstalk,sketchplugin} .
 
 If you don't get any output, you're probably good to go (but then again, you should test your plugins just to make sure they work).
 
@@ -63,4 +63,8 @@ This issue has been found in:
 
 - <https://github.com/timuric/Content-generator-for-sketch-app>
 
+### `integerValue` is no longer working
 
+If your script used `integerValue` to cast a number from a `[doc askForUserInput]` value, it will not work.
+
+Use `parseInt(return_value)` instead if you need an integer (hint: most of the time you probably don't :)
