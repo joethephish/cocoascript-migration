@@ -31,6 +31,7 @@ If you use it as a variable name in your scripts, they won’t work.
 Found in:
 
 - <https://github.com/makzan/Sketch-Plugin-Scripts>
+- <https://github.com/tisho/sketch-plugins>
 
 ### `YES` and `NO` have been removed
 
@@ -62,6 +63,8 @@ or:
 This issue has been found in:
 
 - <https://github.com/timuric/Content-generator-for-sketch-app>
+- <https://github.com/groove25/DrawingKit>
+- <https://github.com/alessndro/sketch-plugins>
 
 ### `integerValue` is no longer working
 
