@@ -24,9 +24,14 @@ Thanks to all for your understanding, and for making Sketch awesome.
 
 ## Known Issues in Sketch 3.0.2 (7777)
 
-### `copy` is now a reserved word
+### Reserved words
 
-If you use it as a variable name in your scripts, they won’t work.
+Apparently, CocoaScript is a bit more strict about the names you can use for your variables. So far, we've identified these reserved words:
+
+- `copy`
+- `id`
+
+If you use any of them as a variable name in your scripts, they won’t work.
 
 Found in:
 
