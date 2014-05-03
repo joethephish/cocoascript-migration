@@ -9,7 +9,7 @@ As a result of this change, **some plugins will stop working unless you fix them
 
 If you want to know wether your plugins are affected or not, run this on your plugins' root folder:
 
-    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e intergerValue --include=*.{js,jstalk,sketchplugin} .
+    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e intergerValue -e allSlices --include=*.{js,jstalk,sketchplugin} .
 
 If you don't get any output, you're probably good to go (but then again, you should test your plugins just to make sure they work).
 
@@ -68,3 +68,8 @@ This issue has been found in:
 If your script used `integerValue` to cast a number from a `[doc askForUserInput]` value, it will not work.
 
 Use `parseInt(return_value)` instead if you need an integer (hint: most of the time you probably don't :)
+
+
+### `allSlices` is deprecated. Use `exportableLayers` instead
+
+This is not exactly related to the CocoaScript migration, but it was a recent change and you may want to check for it while you're fixing other things
