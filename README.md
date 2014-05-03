@@ -7,7 +7,7 @@ As you probably know, Sketch will switch its scripting backend from JSTalk to Co
 
 As a result of this change, **some plugins will stop working unless you fix them**.
 
-If you want to know wether your plugins are affected or not, run this on your plugins' root folder:
+If you want to know whether your plugins are affected or not, run this on your plugins' root folder:
 
     grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e intergerValue -e allSlices --include=*.{js,jstalk,sketchplugin} .
 
@@ -73,6 +73,15 @@ If your script used `integerValue` to cast a number from a `[doc askForUserInput
 Use `parseInt(return_value)` instead if you need an integer (hint: most of the time you probably don't :)
 
 
-### `allSlices` is deprecated. Use `exportableLayers` instead
+## Other Issues
 
-This is not exactly related to the CocoaScript migration, but it was a recent change and you may want to check for it while you're fixing other things
+These issues are not exactly related to the CocoaScript migration, but are recent changes that you may want to check for while you're fixing other things.
+
+
+### `allSlices` is deprecated
+
+Use `exportableLayers` instead.
+
+### `[MSArray length]` is deprecated
+
+Use `[MSArray count]` instead.
