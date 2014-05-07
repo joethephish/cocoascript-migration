@@ -55,15 +55,20 @@ This issue has been found in:
 
 Example:
 
-    [group layers][1]
+    [group layers][1] // Obj-C syntax
+    group.layers()[1] // JS syntax
 
 worked in 3.0, but now you’d need to do:
 
-    [[group layers] objectAtIndex:1]
+    [[group layers] objectAtIndex:1] // Obj-C syntax
+    group.layers().objectAtIndex(1) // JS syntax
 
 or:
 
-    [group layers].array()[1]
+    [group layers].array()[1] // Obj-C syntax
+    group.layers().array()[1] // JS syntax
+
+(Please note that the second option is not backwards-compatible with Sketch 2)
 
 This issue has been found in:
 
