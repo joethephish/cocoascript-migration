@@ -95,7 +95,3 @@ Use `exportableLayers` instead.
 ### `[MSArray length]` is deprecated
 
 Use `[MSArray count]` instead.
-
-### Keyboard Shortcuts are temporarily broken
-
-Sorry about that. This is a known issue, and we'll fix it ASAP.
