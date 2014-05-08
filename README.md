@@ -9,7 +9,7 @@ As a result of this change, **some plugins will stop working unless you fix them
 
 If you want to know whether your plugins are affected or not, run this on your plugins' root folder:
 
-    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e intergerValue -e allSlices --include=*.{js,jstalk,sketchplugin} .
+    grep -rwn -e YES -e NO -e copy -e '\[i\]' -e '\[1\]' -e \[l\] -e integerValue -e allSlices --include=*.{js,jstalk,sketchplugin} .
 
 If you don't get any output, you're probably good to go (but then again, you should test your plugins just to make sure they work).
 
