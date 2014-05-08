@@ -30,6 +30,7 @@ Apparently, CocoaScript is a bit more strict about the names you can use for you
 
 - `copy`
 - `id`
+- `description`
 
 If you use any of them as a variable name in your scripts, they won’t work.
 
