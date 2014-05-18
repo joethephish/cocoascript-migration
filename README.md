@@ -97,3 +97,18 @@ Use `exportableLayers` instead.
 ### `[MSArray length]` is deprecated
 
 Use `[MSArray count]` instead.
+
+### Pointers
+
+CocoaScript is stricter than JSTalk was when it comes to pointer usage, and also better supported because it uses Mocca as its foundation. See the [Mocca documentation](https://github.com/logancollins/Mocha#pointers) for full details, but here's a quick example of an out-argument usage:
+
+	var myColor = [NSColor grayColor];
+	
+	var whitePtr = MOPointer.alloc().init();
+	var alphaPtr = MOPointer.alloc().init();
+	[myColor getWhite:whitePtr alpha:alphaPtr];
+	
+	log("White: "+whitePtr.value()+" alpha: "+alphaPtr.value());
+
+This issue has been found in:
+ - <https://github.com/bomberstudios/sketch-commands/blob/master/library/sandbox.js> (usage of `[NSURL URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:]`).
